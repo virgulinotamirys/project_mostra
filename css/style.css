@@ -3,15 +3,15 @@
 .logo {
     display: flex;
     justify-content: center;
+    padding: 15px;
 }
-
-
 
 /* nav */
 
 .nav-item {
     width: 100%;
     float: left;
+    background-color: #003E81;
 }
 
 .nav-item ul {
@@ -21,21 +21,88 @@
     padding: 0;
 }
 
-.nav-item li a {
-    color: #333;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-}
-
-.nav-item li a:hover {
-    color: blue;
-}
-
 .nav-item li {
     position: relative;
     float: left;
     list-style-type: none;
 }
 
+.nav-item li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
 
+.nav-item li a:hover {
+}
+
+/* about */
+
+#about {
+    background: #003370 !important;
+    padding: 30px;
+}
+
+#about h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+}
+
+#about p {
+    font-size: 16px;
+    color: #fff;
+    text-align: justify;
+}
+
+/* projects */
+
+#projects {
+    background: #fff;
+    padding: 30px;
+}
+
+#projects h1 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #333;
+}
+
+#projects figure {
+    margin: 0;
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    margin: 5px;
+    max-width: 220px;
+    transition: transform .2s;
+}
+
+#projects figcaption {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #333;
+}
+
+
+#projects figure:hover {
+    transform: scale(0.8);
+}
+
+#projects div {
+    display: inline-flex;
+    justify-content: space-between;
+}
+/* footer */
+footer {
+    background: #222;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+}
