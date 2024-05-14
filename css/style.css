@@ -63,6 +63,7 @@
     padding: 30px;
 }
 
+
 #projects h1 {
     font-size: 30px;
     text-transform: uppercase;
@@ -97,8 +98,11 @@
 }
 
 #projects div {
-    display: inline-flex;
+    display: grid;
     justify-content: space-between;
+    display: -ms-grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
 }
 
 /* footer */
